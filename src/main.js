@@ -1,10 +1,10 @@
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import 'izitoast/dist/css/iziToast.min.css';
-import './styles.css';
+import './css/styles.css';
 
 import iziToast from 'izitoast';
-import { fetchImages } from './pixabay-api';
-import { renderGallery, clearGallery, toggleLoader } from './render-functions';
+import { fetchImages } from './js/pixabay-api';
+import { renderGallery, clearGallery, toggleLoader } from './js/render-functions';
 
 const form = document.getElementById('search-form');
 
