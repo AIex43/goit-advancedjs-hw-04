@@ -8,12 +8,14 @@ export default defineConfig(({ command }) => ({
   define: {
     [command === 'serve' ? 'global' : '_global']: {},
   },
-  root: 'src',
-  base: '/goit-advancedjs-hw-03/',     // <-- додано
+  root: 'src', // Entry point is src/index.html
+  base: '/goit-advancedjs-hw-03/', // Required for GitHub Pages deployment
   build: {
     sourcemap: true,
+    outDir: '../dist', // Output directory relative to project root
+    emptyOutDir: true,
     rollupOptions: {
-      input: glob.sync('./src/*.html'),
+      input: glob.sync('./src/*.html'), // Supports multiple HTML entry points
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
@@ -33,12 +35,10 @@ export default defineConfig(({ command }) => ({
         },
       },
     },
-    outDir: '../dist',
-    emptyOutDir: true,
   },
   plugins: [
     injectHTML(),
-    FullReload(['./src/**/**.html']),
+    FullReload(['./src/**/*.html']),
     SortCss({
       sort: 'mobile-first',
     }),
