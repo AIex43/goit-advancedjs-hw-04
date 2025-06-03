@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,31 +11,30 @@
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-CX4EDM7x.css">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/styles-CxZmNXHB.css">
   </head>
-<!-- index.html -->
-<body>
-  <header class="search-header">
-    <form id="search-form" class="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-        class="search-input"
-      />
-      <button type="submit" class="search-button">Search</button>
-    </form>
-  </header>
+  <body>
+    <header class="search-header">
+      <!-- Змінено клас на "form" відповідно до завдання -->
+      <form id="search-form" class="form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+          class="search-input"
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </header>
 
-  <main>
-    <!-- Індикатор завантаження -->
-    <div id="loader" class="loader hidden"></div>
+    <main>
+      <!-- Індикатор завантаження замінено на span з класом loader -->
+      <span id="loader" class="loader hidden"></span>
 
-    <!-- Галерея -->
-    <section class="gallery-container">
-      <ul id="gallery" class="gallery"></ul>
-    </section>
-  </main>
+      <!-- Галерея -->
+      <section class="gallery-container">
+        <ul id="gallery" class="gallery"></ul>
+      </section>
+    </main>
 
-</body>
-
+  </body>
 </html>
