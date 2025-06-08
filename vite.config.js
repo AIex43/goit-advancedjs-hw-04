@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => ({
     [command === 'serve' ? 'global' : '_global']: {},
   },
   root: 'src', // Entry point is src/index.html
-  base: '/goit-advancedjs-hw-03/', // Required for GitHub Pages deployment
+  base: '/goit-advancedjs-hw-04/', // Required for GitHub Pages deployment
   build: {
     sourcemap: true,
     outDir: '../dist', // Output directory relative to project root
