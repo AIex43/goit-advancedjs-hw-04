@@ -1,6 +1,4 @@
-
-
- {
+{
   "name": "goit-advancedjs-hw-04",
   "private": true,
   "version": "1.0.0",
@@ -21,12 +19,12 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.9.0",
     "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.3",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC" 
+  "license": "ISC"
 }
